@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            fontFamily: {
+                'inter': ['Inter','sans-serif'],
+                'manrope': ['Manrope','sans-serif']
+           }
+        }
+      }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="h-[40px] w-full bg-black text-white text-inter flex items-center justify-center">
+        <p>Get 25% OFF on your first order. <a href="#">Order Now</a></p>
+    </div>
+        <!-- Header -->
+    <div class="flex items-center justify-between px-[182px] py-[24px]">
+        <div class="flex items-center justify-center gap-[12px]">
+            <img alt="logo" src="./images/home/Logo.png">
+            <h1 class="font-extrabold text-manrope text-[20px]">Ecommerce</h1>
+        </div>
+        <ul class="flex items-center justify-center gap-[32px]">
+            <a href="#">
+                <li class="font-inter font-medium text-[14px] text-[#5C5F6A]">
+                    Home
+                </li>
+            </a>
+            <a href="#">
+                <li class="font-inter font-medium text-[14px] text-[#5C5F6A]">
+                    Categories
+                </li>
+            </a>
+            <a href="#">
+                <li class="font-inter font-medium text-[14px] text-[#5C5F6A]">
+                    About
+                </li>
+            </a>
+            <a href="#">
+                <li class="font-inter font-medium text-[14px] text-[#5C5F6A]">
+                    Contact
+                </li>
+            </a>
+        </ul>
+        <div class="flex items-center justify-center gap-[32px]">
+            <div class="flex items-center">
+                <input placeholder="Search Products" class="border-[#E6E7E8] border py-[10px] px-[50px] rounded-[6px] relative">
+                <i class="fa-solid fa-magnifying-glass w-[18px] h-[18px]  text-[#878A92] absolute ml-[15px]"></i>
+            </div>
+            <i class="fa-solid fa-cart-shopping w-[18px] h-[18px] text-[#5C5F6A]"></i>
+            <i class="fa-regular fa-user w-[18px] h-[18px] text-[#5C5F6A]"></i>
+        </div>
+    </div>
+    <!-- Section-1 -->
+    <div class="bg-[#F6F6F6] h-[440px] w-full flex justify-between">
+        <div class="px-[182px] flex flex-col items-start">
+            <h2 class="text-inter font-semibold text-[32px] mt-[136px]">Fresh Arrivals Online</h2>
+            <p class="text-inter font-normal text-[14px] mt-[12px]">Discover Our Newest Collection Today.</p>
+            <button class="mt-[48px] rounded-[4px] bg-[#0E1422] text-white text-[14px] text-inter flex items-center justify-center gap-[6px] py-[10px] px-[25px]">
+                <p>View Collection</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <div>
+            <img class="w-[340px] relative mt-[90px] mr-[178px]" src="./images/home/circle.png">
+            <img class="w-[255px] absolute mt-[-366px] ml-[90px]" src="./images/home/man-img.png">
+            <img class="w-[38px] absolute mt-[-350px]" src="./images/home/star.png">
+        </div>
+    </div>
+    <!-- Section-2 -->
+    <div class="px-[174px] py-[88px] flex items-center justify-between">
+        <div class="flex flex-col items-start w-[328px] px-[40px]">
+            <img class="w-[48px]" src="./images/home/Icon Box1.png">
+            <h5 class="text-inter font-semibold text-[16px] mt-[24px]">Free Shipping</h5>
+            <p class="text-inter text-[14px] text-[#474B57] mt-[12px]">Upgrade your style today and get FREE shipping on all orders! Don't miss out.</p>
+        </div>
+        <div class="flex flex-col items-start w-[328px] px-[40px]">
+            <img class="w-[48px]" src="./images/home/Icon Box2.png">
+            <h5 class="text-inter font-semibold text-[16px] mt-[24px]">Satisfaction Guarantee</h5>
+            <p class="text-inter text-[14px] text-[#474B57] mt-[12px]">Shop confidently with our Satisfaction Guarantee: Love it or get a refund.</p>
+        </div>
+        <div class="flex flex-col items-start w-[328px] px-[40px]">
+            <img class="w-[48px]" src="./images/home/Icon Box3.png">
+            <h5 class="text-inter font-semibold text-[16px] mt-[24px]">Secure Payment</h5>
+            <p class="text-inter text-[14px] text-[#474B57] mt-[12px]">Your security is our priority. Your payments are secure with us.</p>
+        </div>
+    </div>
+    <div class="flex flex-col items-center py-[72px]">
+        <p class="text-[#878A92] font-medium text-inter text-[12px]">SHOP NOW</p>
+        <h3 class="text-[#0E1422] text-inter text-[24px] font-bold">Best Selling</h3>
+    </div>
+    <div class="mt-[80px] px-[174px] flex items-center justify-between">
+        <div>
+            <img src="./images/products/Tshirt.png">
+            <p class="text-inter text-[14px] font-medium mt-[25px]">Classic Monochrome Tees</p>
+            <div class="flex items-center gap-[16px] mt-[12px]">
+                <div class="border border-[#E6E7E8] rounded-[8px] px-[16px] py-[2px] text-inter text-[12px] font-medium">In Stock</div>
+                <p class="text-[#474B57] text-[14px] font-normal text-inter">$35.00</p>
+            </div>
+        </div>
+        <div>
+            <img src="./images/products/Tshirt2.png">
+            <p class="text-inter text-[14px] font-medium mt-[25px]">Monochromatic Wardrobe</p>
+            <div class="flex items-center gap-[16px] mt-[12px]">
+                <div class="border border-[#E6E7E8] rounded-[8px] px-[16px] py-[2px] text-inter text-[12px] font-medium">In Stock</div>
+                <p class="text-[#474B57] text-[14px] font-normal text-inter">$27.00</p>
+            </div>
+        </div>
+        <div>
+            <img src="./images/products/Tshirt3.png">
+            <p class="text-inter text-[14px] font-medium mt-[25px]">Essential Neutrals</p>
+            <div class="flex items-center gap-[16px] mt-[12px]">
+                <div class="border border-[#E6E7E8] rounded-[8px] px-[16px] py-[2px] text-inter text-[12px] font-medium">In Stock</div>
+                <p class="text-[#474B57] text-[14px] font-normal text-inter">$22.00</p>
+            </div>
+        </div>
+        <div>
+            <img src="./images/products/Tshirt4.png">
+            <p class="text-inter text-[14px] font-medium mt-[25px]">UTRAANET Black</p>
+            <div class="flex items-center gap-[16px] mt-[12px]">
+                <div class="border border-[#E6E7E8] rounded-[8px] px-[16px] py-[2px] text-inter text-[12px] font-medium">In Stock</div>
+                <p class="text-[#474B57] text-[14px] font-normal text-inter">$43.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
